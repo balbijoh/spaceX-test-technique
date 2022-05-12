@@ -8,12 +8,15 @@ body {
     background-size: cover;
 }
 
+
+/* ----------------------------- Header ----------------------------- */
+
 header {
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
-    background-color: rgb(28, 28, 82);
+    background-color: rgb(56, 56, 139);
     color: white;
 }
 
@@ -28,21 +31,35 @@ header h1 span {
     margin-right: 20px;
 }
 
+
+/* ------------------------------ Main ------------------------------ */
+
 #launches {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+
+/* ----------------------- Latest launch card ----------------------- */
+
 #latest-launch {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 25%;
     min-width: 300px;
+    max-width: 650px;
     height: 500px;
     margin: 50px 0;
     border-radius: 20px;
     box-shadow: 0 0 10px 0 rgb(48, 48, 197);
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#latest-launch:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
 }
 
 #latest-launch h2 {
@@ -56,14 +73,71 @@ header h1 span {
     padding-top: 20px;
 }
 
+#latest-launch-datas {
+    margin: 20px;
+}
+
+#latest-launch-datas p {
+    margin: 10px 0;
+}
+
+#latest-launch-datas .media-link {
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(28, 28, 82);
+    color: white;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+#latest-launch-datas .media-link:hover {
+    color: rgb(248, 220, 93);
+}
+
+#latest-launch #drawings {
+    width: 98%;
+    background-image: url(img/space-drawing.png);
+}
+
+#latest-launch #rocket-drawing {
+    width: 150px;
+    position: relative;
+        top: 60px;
+        left: 100px;
+}
+
+#latest-launch #rocket-drawing:hover {
+    animation: swing 0.2s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+    50% {
+    transform: rotate(1deg);
+    }
+    100% {
+    transform: rotate(-1deg);
+    }
+}
+
+
+
+/* ------------------------- Map with markers ------------------------- */
+
 #map-pads {
+    width: 70%;
     margin: 50px 0;
     border-radius: 20px;
     box-shadow: 0 0 10px 0 rgb(48, 48, 197);
 }
 
+#map-pads:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
 #map {
-    width: 800px;
+    width: 100%;
     height: 500px;
     border-radius: 20px;
 }
