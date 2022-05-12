@@ -5,7 +5,7 @@
     - la distance à laquelle se trouve le roadster par rapport à la Terre et sa date de lancement
 */
 
-const latestLaunch = document.querySelector("#latest-launch");
+const latestLaunch = document.querySelector("#latest-launch-data");
 
 
     // latest launch : name and date
@@ -26,7 +26,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 
     // custom icon for launchpads markers
 let rocketIcon = L.icon({
-    iconUrl: 'rocket_icon.png',
+    iconUrl: 'img/rocket_icon.png',
     iconSize: [20, 50]
 });
 

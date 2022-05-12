@@ -13,13 +13,21 @@
 
 <body>
     <header>
-        <h1>Dashboard</h1>
+        <h1><span>SpaceX</span> Tableau de bord</h1>
     </header>
 
     <main>
-        <h2>Test Fetch</h2>
-        <div id="latest-launch"></div>
-        <div id="map"></div>
+        <div id="launches">
+            <section id="latest-launch">
+                <h2>Dernier lancement</h2>
+                <div id="latest-launch-data"></div>
+            </section>
+
+            <section id="map-pads">
+                <div id="map"></div>
+            </section>
+        </div>
+
     </main>
 
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
